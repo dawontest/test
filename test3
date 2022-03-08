@@ -1,0 +1,8 @@
+void numCheck (int num) {
+
+  if (num%2 == 1) {
+     system.out.println("odd number");
+  }
+  
+  system.out.println("x is odd number.");
+}
