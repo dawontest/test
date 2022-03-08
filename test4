@@ -1,0 +1,5 @@
+ 	if (A and B) or (C and D) then
+ 		check_ABCD;
+	else
+		check_something_else;
+	end if;
