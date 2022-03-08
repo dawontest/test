@@ -1,0 +1,15 @@
+ 	READ (Num);
+ 	WHILE NOT End of File DO
+ 		Prime:= TRUE;
+ 		FOR Factor:= 2 TO Num DIV 2 DO
+			IF Num - (Num DIV Factor)*Factor = 0 THEN
+ 				WRITE (Factor, ` is a factor of', Num);
+ 					Prime:= FALSE;
+ 			ENDIF;
+ 		ENDFOR;
+ 		IF Prime = TRUE THEN
+ 		WRITE (Num, ` is prime');
+ 		ENDIF;
+ 		READ (Num);
+ 	END WHILE;
+ 	WRITE (`End of prime number program');
