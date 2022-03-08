@@ -1,0 +1,10 @@
+int num;
+int check = 1;
+ 
+if (num%2 == 1) {
+ System.out.println("odd number");
+}
+
+if (check == 1){
+ System.out.println("num is odd number.");
+}
