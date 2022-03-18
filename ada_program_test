@@ -1,0 +1,16 @@
+procedure Solve_Quadratic(A, B, C: in Float; Is_Complex: out Boolean; R1, R2: out Float)
+is
+-- Is_Complex is true if the roots are not real.
+-- If the two roots are real, they are produced in R1, R2.
+
+	  Discrim: Float:= B*B - 4.0*A*C;
+	  R1, R2: Float;
+	begin
+	  if Discrim < 0.0 then
+	    Is_Complex:= true;
+	  else
+	    Is_Complex:= false;
+	  end if;
+	
+	  if not Is_Complex then
+	    R1:= (-B + Sqrt(Discrim))/ (2.0*A);
